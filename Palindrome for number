@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+ 	    
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int a=0;
+		int b=n;
+		int rev=0;
+		
+	 while (b > 0) {
+            a = b % 10;      
+            rev = rev*10 +a; 
+            b = b / 10;        
+		    System.out.println(a);
+ 		    		            System.out.println(b);
+ 		    		            System.out.println(rev);
+
+		    	
+
+		}
+		if (rev==n){
+		    System.out.println("its palinddrom");
+		} else{
+		    System.out.println("not a palindrom");
+		}
+		  
+	
+	 
+		
+ 	}
+}
